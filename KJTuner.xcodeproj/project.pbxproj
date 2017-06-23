@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88CE3B541EC9C5F20048DED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3B531EC9C5F20048DED7 /* main.m */; };
+		88CE3B571EC9C5F20048DED7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3B561EC9C5F20048DED7 /* AppDelegate.m */; };
+		88CE3B5A1EC9C5F20048DED7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3B591EC9C5F20048DED7 /* ViewController.m */; };
+		88CE3B5D1EC9C5F20048DED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE3B5B1EC9C5F20048DED7 /* Main.storyboard */; };
+		88CE3B5F1EC9C5F20048DED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CE3B5E1EC9C5F20048DED7 /* Assets.xcassets */; };
+		88CE3B621EC9C5F20048DED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE3B601EC9C5F20048DED7 /* LaunchScreen.storyboard */; };
+		95BE126A1EDD8B320074D8DF /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BE11611EDD8B320074D8DF /* fft.c */; };
+		95BE12771EDD8B320074D8DF /* base.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BE11751EDD8B320074D8DF /* base.c */; };
+		95BE12BB1EDD8B320074D8DF /* ptrack.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BE11B91EDD8B320074D8DF /* ptrack.c */; };
+		95BE12E81EDD8B910074D8DF /* KJTuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BE12E71EDD8B910074D8DF /* KJTuner.m */; };
+		95BE12FF1EDDBC060074D8DF /* DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95BE12FC1EDDBC060074D8DF /* DSPKernel.mm */; };
+		95BE13041EDDBC130074D8DF /* KJAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95BE13011EDDBC130074D8DF /* KJAudioUnit.mm */; };
+		95BE13051EDDBC130074D8DF /* SilenceAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95BE13031EDDBC130074D8DF /* SilenceAudioUnit.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88CE3B731EC9C6CB0048DED7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88CE3B4F1EC9C5F20048DED7 /* KJTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88CE3B531EC9C5F20048DED7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88CE3B551EC9C5F20048DED7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88CE3B561EC9C5F20048DED7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88CE3B581EC9C5F20048DED7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88CE3B591EC9C5F20048DED7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88CE3B5C1EC9C5F20048DED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88CE3B5E1EC9C5F20048DED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88CE3B611EC9C5F20048DED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88CE3B631EC9C5F20048DED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BE11611EDD8B320074D8DF /* fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fft.c; path = lib/fft/fft.c; sourceTree = "<group>"; };
+		95BE11751EDD8B320074D8DF /* base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base.c; path = modules/base.c; sourceTree = "<group>"; };
+		95BE11B91EDD8B320074D8DF /* ptrack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ptrack.c; path = modules/ptrack.c; sourceTree = "<group>"; };
+		95BE11E01EDD8B320074D8DF /* soundpipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundpipe.h; sourceTree = "<group>"; };
+		95BE12E61EDD8B910074D8DF /* KJTuner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KJTuner.h; path = KJTuner/KJTuner.h; sourceTree = "<group>"; };
+		95BE12E71EDD8B910074D8DF /* KJTuner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KJTuner.m; path = KJTuner/KJTuner.m; sourceTree = "<group>"; };
+		95BE12F91EDDBC060074D8DF /* BoosterDSPKernel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoosterDSPKernel.hpp; path = DSP/BoosterDSPKernel.hpp; sourceTree = "<group>"; };
+		95BE12FA1EDDBC060074D8DF /* BufferedAudioBus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BufferedAudioBus.hpp; path = DSP/BufferedAudioBus.hpp; sourceTree = "<group>"; };
+		95BE12FB1EDDBC060074D8DF /* DSPKernel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DSPKernel.hpp; path = DSP/DSPKernel.hpp; sourceTree = "<group>"; };
+		95BE12FC1EDDBC060074D8DF /* DSPKernel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DSPKernel.mm; path = DSP/DSPKernel.mm; sourceTree = "<group>"; };
+		95BE12FD1EDDBC060074D8DF /* FrequencyTrackerDSPKernel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FrequencyTrackerDSPKernel.hpp; path = DSP/FrequencyTrackerDSPKernel.hpp; sourceTree = "<group>"; };
+		95BE12FE1EDDBC060074D8DF /* ParameterRamper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ParameterRamper.hpp; path = DSP/ParameterRamper.hpp; sourceTree = "<group>"; };
+		95BE13001EDDBC130074D8DF /* KJAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KJAudioUnit.h; path = AudioUnits/KJAudioUnit.h; sourceTree = "<group>"; };
+		95BE13011EDDBC130074D8DF /* KJAudioUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KJAudioUnit.mm; path = AudioUnits/KJAudioUnit.mm; sourceTree = "<group>"; };
+		95BE13021EDDBC130074D8DF /* SilenceAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SilenceAudioUnit.h; path = AudioUnits/SilenceAudioUnit.h; sourceTree = "<group>"; };
+		95BE13031EDDBC130074D8DF /* SilenceAudioUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SilenceAudioUnit.mm; path = AudioUnits/SilenceAudioUnit.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88CE3B4C1EC9C5F20048DED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88CE3B461EC9C5F20048DED7 = {
+			isa = PBXGroup;
+			children = (
+				88CE3B511EC9C5F20048DED7 /* KJTuner */,
+				88CE3B501EC9C5F20048DED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88CE3B501EC9C5F20048DED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88CE3B4F1EC9C5F20048DED7 /* KJTuner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88CE3B511EC9C5F20048DED7 /* KJTuner */ = {
+			isa = PBXGroup;
+			children = (
+				95BE12E61EDD8B910074D8DF /* KJTuner.h */,
+				95BE12E71EDD8B910074D8DF /* KJTuner.m */,
+				88CE3B551EC9C5F20048DED7 /* AppDelegate.h */,
+				88CE3B561EC9C5F20048DED7 /* AppDelegate.m */,
+				88CE3B581EC9C5F20048DED7 /* ViewController.h */,
+				88CE3B591EC9C5F20048DED7 /* ViewController.m */,
+				88CE3B5B1EC9C5F20048DED7 /* Main.storyboard */,
+				88CE3B5E1EC9C5F20048DED7 /* Assets.xcassets */,
+				88CE3B601EC9C5F20048DED7 /* LaunchScreen.storyboard */,
+				88CE3B631EC9C5F20048DED7 /* Info.plist */,
+				95BE12EA1EDD8D320074D8DF /* Internals */,
+				88CE3B521EC9C5F20048DED7 /* Supporting Files */,
+			);
+			path = KJTuner;
+			sourceTree = "<group>";
+		};
+		88CE3B521EC9C5F20048DED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88CE3B531EC9C5F20048DED7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95BE11571EDD8B320074D8DF /* Soundpipe */ = {
+			isa = PBXGroup;
+			children = (
+				95BE11611EDD8B320074D8DF /* fft.c */,
+				95BE11751EDD8B320074D8DF /* base.c */,
+				95BE11B91EDD8B320074D8DF /* ptrack.c */,
+				95BE11E01EDD8B320074D8DF /* soundpipe.h */,
+			);
+			path = Soundpipe;
+			sourceTree = "<group>";
+		};
+		95BE12EA1EDD8D320074D8DF /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				95BE12F41EDDB7E90074D8DF /* DSP */,
+				95BE12F51EDDB7F20074D8DF /* AudioUnits */,
+				95BE11571EDD8B320074D8DF /* Soundpipe */,
+			);
+			name = Internals;
+			path = KJTuner;
+			sourceTree = "<group>";
+		};
+		95BE12F41EDDB7E90074D8DF /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				95BE12F91EDDBC060074D8DF /* BoosterDSPKernel.hpp */,
+				95BE12FA1EDDBC060074D8DF /* BufferedAudioBus.hpp */,
+				95BE12FB1EDDBC060074D8DF /* DSPKernel.hpp */,
+				95BE12FC1EDDBC060074D8DF /* DSPKernel.mm */,
+				95BE12FD1EDDBC060074D8DF /* FrequencyTrackerDSPKernel.hpp */,
+				95BE12FE1EDDBC060074D8DF /* ParameterRamper.hpp */,
+			);
+			name = DSP;
+			sourceTree = "<group>";
+		};
+		95BE12F51EDDB7F20074D8DF /* AudioUnits */ = {
+			isa = PBXGroup;
+			children = (
+				95BE13001EDDBC130074D8DF /* KJAudioUnit.h */,
+				95BE13011EDDBC130074D8DF /* KJAudioUnit.mm */,
+				95BE13021EDDBC130074D8DF /* SilenceAudioUnit.h */,
+				95BE13031EDDBC130074D8DF /* SilenceAudioUnit.mm */,
+			);
+			name = AudioUnits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88CE3B4E1EC9C5F20048DED7 /* KJTuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88CE3B661EC9C5F20048DED7 /* Build configuration list for PBXNativeTarget "KJTuner" */;
+			buildPhases = (
+				88CE3B4B1EC9C5F20048DED7 /* Sources */,
+				88CE3B4C1EC9C5F20048DED7 /* Frameworks */,
+				88CE3B4D1EC9C5F20048DED7 /* Resources */,
+				88CE3B731EC9C6CB0048DED7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJTuner;
+			productName = KJTuner;
+			productReference = 88CE3B4F1EC9C5F20048DED7 /* KJTuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88CE3B471EC9C5F20048DED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "appsolute GmbH";
+				TargetAttributes = {
+					88CE3B4E1EC9C5F20048DED7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3NP792379T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 88CE3B4A1EC9C5F20048DED7 /* Build configuration list for PBXProject "KJTuner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88CE3B461EC9C5F20048DED7;
+			productRefGroup = 88CE3B501EC9C5F20048DED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88CE3B4E1EC9C5F20048DED7 /* KJTuner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88CE3B4D1EC9C5F20048DED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CE3B621EC9C5F20048DED7 /* LaunchScreen.storyboard in Resources */,
+				88CE3B5F1EC9C5F20048DED7 /* Assets.xcassets in Resources */,
+				88CE3B5D1EC9C5F20048DED7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88CE3B4B1EC9C5F20048DED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BE126A1EDD8B320074D8DF /* fft.c in Sources */,
+				88CE3B5A1EC9C5F20048DED7 /* ViewController.m in Sources */,
+				88CE3B571EC9C5F20048DED7 /* AppDelegate.m in Sources */,
+				88CE3B541EC9C5F20048DED7 /* main.m in Sources */,
+				95BE12FF1EDDBC060074D8DF /* DSPKernel.mm in Sources */,
+				95BE12771EDD8B320074D8DF /* base.c in Sources */,
+				95BE13041EDDBC130074D8DF /* KJAudioUnit.mm in Sources */,
+				95BE12BB1EDD8B320074D8DF /* ptrack.c in Sources */,
+				95BE13051EDDBC130074D8DF /* SilenceAudioUnit.mm in Sources */,
+				95BE12E81EDD8B910074D8DF /* KJTuner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88CE3B5B1EC9C5F20048DED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88CE3B5C1EC9C5F20048DED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88CE3B601EC9C5F20048DED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88CE3B611EC9C5F20048DED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88CE3B641EC9C5F20048DED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88CE3B651EC9C5F20048DED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88CE3B671EC9C5F20048DED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NP792379T;
+				INFOPLIST_FILE = KJTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.appsolute.KJTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88CE3B681EC9C5F20048DED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NP792379T;
+				INFOPLIST_FILE = KJTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.appsolute.KJTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88CE3B4A1EC9C5F20048DED7 /* Build configuration list for PBXProject "KJTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CE3B641EC9C5F20048DED7 /* Debug */,
+				88CE3B651EC9C5F20048DED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88CE3B661EC9C5F20048DED7 /* Build configuration list for PBXNativeTarget "KJTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CE3B671EC9C5F20048DED7 /* Debug */,
+				88CE3B681EC9C5F20048DED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88CE3B471EC9C5F20048DED7 /* Project object */;
+}
